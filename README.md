@@ -16,7 +16,7 @@ To generate different random data, compile *random_data_generator.cpp* and run t
 
 
 
-To compile tConvolve-MPI-MIC program, you need an ICC 2014 or later version and a Xeon Phi coprocessor (I used the earlist KNC cards). If you don't have a MIC card, *tConvolve-MPI-CPU* folder provides a pure CPU version. Just type `make`  to compile this program. To run the program, the command should looks like `mpirun -np <num_of_nodes> -machinefile <node_list_file> ./tConvolve` , because in a node the program will use OpenMP for parallel(so you just need 1 process in each node). Make sure *input.dat*, *randnum.dat* and *tConvolve* are in the same folder. 
+To compile tConvolve-MPI-MIC program, you need an ICC 2014 or later version and a Xeon Phi coprocessor (I used the earlist KNL cards). If you don't have a MIC card, *tConvolve-MPI-CPU* folder provides a pure CPU version. Just type `make`  to compile this program. To run the program, the command should looks like `mpirun -np <num_of_nodes> -machinefile <node_list_file> ./tConvolve` , because in a node the program will use OpenMP for parallel(so you just need 1 process in each node). Make sure *input.dat*, *randnum.dat* and *tConvolve* are in the same folder. 
 
 
 
